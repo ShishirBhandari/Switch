@@ -29,7 +29,7 @@
 
 .search-box {
   float: right;
-  margin: 5px 30px 5px 15px;
+  margin: 5px;
 }
 
 .landing-box {
@@ -57,4 +57,13 @@
 .our-happy-client {
   background-color: #f2f1f1;
   padding-top: 40px;
+}
+
+/* 
+Responsive
+*/
+@media only screen and (min-width: 778px) {
+  .search-box {
+    margin: 5px 30px 5px 15px;
+  }
 }
