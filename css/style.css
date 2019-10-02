@@ -352,10 +352,16 @@ Testimonials
   text-align: center;
 }
 
+.our-happy-client ul.images-list {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .our-happy-client .images-list li {
-  width: 15%;
-  margin: 4%;
-  display: inline-block;
+  /* width: 15%; */
+  /* margin: 4%; */
+  margin: 50px;
 }
 
 .our-happy-client .see-all-client {
