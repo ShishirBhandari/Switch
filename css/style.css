@@ -6,7 +6,7 @@ a {
 }
 
 .main-menu-burger {
-  padding: 7px;
+  padding: 6px 0;
 }
 
 .main-menu:hover li {
@@ -38,31 +38,39 @@ a {
   border-top: 5px solid #54d154;
 }
 
+.main-menu a.active {
+  border-top: 5px solid #54d154;
+}
+
 .website-title {
   color: white;
   text-align: center;
   font-size: 24px;
-  /* width: 200px; */
-  margin: 0px auto;
-  padding: 5px;
-  /* position: absolute; */
-  float: left;
-  /* left: 50%; */
-  font-family: "Nautilus Pompilius";
-  /* transform: translate(-50%, 0); */
+  position: absolute;
+
+  left: 60px;
+  /* font-family: "Impact", sans-serif; */
 }
 
 .search-box input {
   border: none;
-  width: 100%;
   content: block;
   line-height: 28px;
-  width: 80px;
+  /* width: 80px; */
+  width: 178px;
 
   background-color: white;
   border-radius: 14px;
   padding: 0px 14px;
   opacity: 0.8;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  opacity: 0.7;
 }
 
 .landing-box h1 {
@@ -313,21 +321,60 @@ Testimonials
 }
 
 .content .profile .img {
-  float: left;
+  /* float: left; */
 }
 
 .profile .description {
   float: right;
   text-align: left;
-  margin-left: 5px;
+  margin: 0px 5px;
 }
 
 .profile .description h3 {
-  opacity: 0.8;
+  margin: 2px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
 }
 
 .profile .description p {
   font-size: 14px;
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.5;
+  color: grey;
+}
+
+.our-happy-client .images-list {
+  /* padding: 0 8%; */
+  /* padding-top: 70px;
+    margin: 0 5%; */
+  text-align: center;
+}
+
+.our-happy-client .images-list li {
+  width: 15%;
+  margin: 4%;
+  display: inline-block;
+}
+
+.our-happy-client .see-all-client {
+  margin: 40px auto;
+  display: inline-block;
+}
+
+.our-happy-client .see-all-client a {
+  color: #a59d9d;
+  background-color: #dddcdc;
+  width: 186px;
+  line-height: 40px;
+  padding: 0px 16px;
+  display: block;
+  border-radius: 18px;
+}
+
+.our-happy-client .see-all-client a:hover {
+  background-color: #aaa9a9;
 }
 
 /* 
@@ -346,7 +393,7 @@ Testimonials
 
 /* Media Queries */
 
-@media only screen and (min-width: 778px) {
+@media only screen and (min-width: 768px) {
   .main-menu:hover li {
     float: left;
   }
