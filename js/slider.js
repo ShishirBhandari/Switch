@@ -1,3 +1,6 @@
+var AUTO_SLIDE_TIME = 4; // in seconds
+var slideInterval;
+
 var leftArrow = document.querySelector('.testimonials .carousel .left-arrow');
 var rightArrow = document.querySelector('.testimonials .carousel .right-arrow');
 
@@ -50,6 +53,10 @@ function slide() {
       content.style.display = 'none';
     }
   }
+
+  clearInterval(slideInterval);
+  autoSlide();
+
   indicatorsUpdate();
 }
 
@@ -73,3 +80,15 @@ rightArrow.onclick = function() {
 
 createIndicators();
 slide();
+autoSlide();
+
+function autoSlide() {
+  slideInterval = setInterval(function() {
+    if (currentIndex >= contentsLength - 1) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+    slide();
+  }, AUTO_SLIDE_TIME * 1000);
+}
