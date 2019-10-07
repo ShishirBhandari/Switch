@@ -5,8 +5,9 @@ html {
 
 .main-container {
   width: 100%;
+  text-align: center;
   /* font-family: "Montserrat", sans-serif; */
-  font-family: "ProximaNova", sans-serif;
+  font-family: 'ProximaNova', sans-serif;
 }
 
 .header {
@@ -18,7 +19,7 @@ html {
   display: block;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/background.png");
+    url('../images/background.png');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -78,6 +79,27 @@ html {
   background-color: #f2f1f1;
   padding-top: 30px;
   text-align: center;
+}
+
+.meet-the-team {
+  background-color: #54d154;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.about-recent-contact {
+  margin: 0 auto;
+  background-color: #333333;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
 }
 
 /* 

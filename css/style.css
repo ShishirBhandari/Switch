@@ -49,6 +49,7 @@ a {
   position: absolute;
 
   left: 60px;
+  top: 5px;
   /* font-family: "Impact", sans-serif; */
 }
 
@@ -274,15 +275,37 @@ Testimonials
   text-align: center;
 }
 
-.testimonials .content {
+.testimonials .carousel {
   display: inline-block;
   max-width: 760px;
   position: relative;
   margin: 60px auto;
 }
 
+.testimonials .indicators {
+  display: inline-block;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.testimonials .indicators li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #aaaaaa;
+  margin: 5px;
+  border: 3px solid white;
+}
+
+.testimonials .indicators li.active {
+  background-color: #2b9b2b;
+  border: 3px solid #2b9b2b;
+}
+
 .testimonials .left-arrow {
-  background: url("../images/left-arrow.png") no-repeat;
+  background: url('../images/left-arrow.png') no-repeat;
   border: none;
   position: absolute;
   left: 0;
@@ -292,7 +315,7 @@ Testimonials
 }
 
 .testimonials .right-arrow {
-  background: url("../images/right-arrow.png");
+  background: url('../images/right-arrow.png');
   border: none;
   position: absolute;
   right: 0;
@@ -381,6 +404,185 @@ Testimonials
 
 .our-happy-client .see-all-client a:hover {
   background-color: #aaa9a9;
+  color: white;
+}
+
+/* 
+  About Us
+*/
+
+.about-recent-contact .left-container {
+  width: 100%;
+  background-color: #333333;
+}
+
+.about-recent-contact .separator-line {
+  width: 28px;
+  height: 2px;
+  margin: 12px auto;
+  opacity: 0.8;
+  background-color: white;
+}
+
+.about-recent-contact span {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.about-us {
+  /* display: inline-block; */
+  width: 80%;
+  margin: 0 10%;
+  color: white;
+  font-size: 14px;
+}
+
+.about-us ul {
+  width: 84px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  border-radius: 14px;
+  margin: 28px 0;
+}
+
+.about-us li {
+  list-style: none;
+  padding-top: 5px;
+  display: inline-block;
+}
+
+.recent-posts {
+  /* display: inline-block; */
+  width: 80%;
+  margin: 25px 10%;
+}
+
+.recent-posts li {
+  color: white;
+  list-style: none;
+  padding: 6px 0;
+
+  display: block;
+  float: none;
+}
+
+.recent-posts li img {
+  width: 53px;
+  height: auto;
+}
+
+.recent-posts .description {
+  float: none;
+  text-align: center;
+  display: block;
+  margin-left: 7px;
+}
+
+.recent-posts .description p {
+  margin: 4px 0;
+  text-align: center;
+}
+
+.recent-posts .description span {
+  padding: 4px 5px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.magazine {
+  background-color: #2b9b2b;
+}
+
+.ui-design {
+  background-color: #ffba00;
+}
+
+.photography {
+  background-color: #089dea;
+}
+
+.book {
+  background-color: #f34d04;
+}
+
+.contact-us {
+  /* display: inline-block; */
+  /* width: 33.33%; */
+
+  float: none;
+  color: white;
+  width: 80%;
+  margin: 30px 10%;
+}
+
+.contact-us p {
+  font-size: 14px;
+  width: 70%;
+}
+
+.contact-us .form {
+  margin-top: 25px;
+  /* width: 322px; */
+  width: 100%;
+}
+
+.form input {
+  background-color: #444444;
+  border: none;
+  width: 100%;
+  margin: 2px;
+  /* padding: 8px 14px; */
+}
+
+.form #name {
+  height: 32px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.form #email {
+  height: 32px;
+}
+
+.form #message {
+  height: 132px;
+}
+
+.form button {
+  width: 100%;
+  height: 32px;
+  background-color: #2b9b2b;
+  border: none;
+  margin: 2px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.form button:hover {
+  background-color: #2bcb2b;
+}
+
+/* Footer */
+.footer img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -4px;
+}
+
+.footer span {
+  background-color: #111111;
+  color: #aaa;
+  font-size: 12px;
+  line-height: 24px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  /* position: absolute;
+  bottom: 0; */
 }
 
 /* 
@@ -392,7 +594,7 @@ Testimonials
 }
 
 .clearfix::after {
-  content: "";
+  content: '';
   clear: both;
   display: table;
 }
@@ -416,7 +618,7 @@ Testimonials
     position: absolute;
     float: none;
     left: 60%;
-    font-family: "Nautilus Pompilius";
+    font-family: 'Nautilus Pompilius';
     transform: translate(-50%, 0);
   }
 
@@ -428,6 +630,39 @@ Testimonials
     width: 30%;
     margin: 70px 1.6667% 0px 1.6666%;
     float: left;
+  }
+
+  .about-recent-contact .left-container {
+    float: left;
+    width: 66.66%;
+  }
+
+  .about-recent-contact .about-us {
+    width: 40%;
+    margin: 0 5%;
+    float: left;
+    margin: 0 8.33%;
+  }
+
+  .about-recent-contact .recent-posts {
+    width: 40%;
+    margin: 0 0;
+    float: right;
+  }
+
+  .about-recent-contact .recent-posts li {
+    display: inline-block;
+  }
+
+  .about-recent-contact .recent-posts li .description {
+    float: right;
+    text-align: left;
+  }
+
+  .about-recent-contact .contact-us {
+    float: right;
+    width: 25%;
+    margin: 0 2%;
   }
 }
 
