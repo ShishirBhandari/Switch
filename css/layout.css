@@ -36,6 +36,10 @@ html {
   position: absolute;
   text-align: left;
   z-index: 10;
+  /* width: 100%; */
+}
+
+.main-menu:hover {
   width: 100%;
 }
 
