@@ -6,8 +6,8 @@ html {
 .main-container {
   width: 100%;
   text-align: center;
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: 'ProximaNova', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'ProximaNova', sans-serif; */
 }
 
 .header {
@@ -32,18 +32,25 @@ html {
 }
 
 .main-menu {
-  margin-left: 30px;
   /* float: left; */
   position: absolute;
   text-align: left;
   z-index: 10;
+  width: 100%;
 }
 
 .search-box {
   float: right;
   margin: 5px;
-  /* width: 40%; */
+  width: 50%;
+  max-width: 178px;
   position: relative;
+
+  background-color: white;
+  border-radius: 12px;
+  line-height: 28px;
+  /* padding: 0px 14px; */
+  opacity: 0.8;
 }
 
 .landing-box {
@@ -84,7 +91,6 @@ html {
 .meet-the-team {
   background-color: #54d154;
   padding-top: 30px;
-  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -105,7 +111,12 @@ html {
 /* 
 Responsive
 */
+
 @media only screen and (min-width: 768px) {
+  .main-menu {
+    margin-left: 30px;
+  }
+
   .search-box {
     margin: 5px 30px 5px 15px;
   }

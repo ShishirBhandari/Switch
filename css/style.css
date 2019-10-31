@@ -5,6 +5,11 @@ a {
   text-align: center;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 .main-menu-burger {
   padding: 6px 0;
 }
@@ -14,7 +19,14 @@ a {
   display: inline;
 }
 
+.main-menu-burger {
+  margin-left: 30px;
+}
+
 .main-menu ul {
+
+  background-color: rgba(55, 55, 55, 0.75);
+  display: block;
 }
 
 .main-menu li {
@@ -31,7 +43,7 @@ a {
   padding-top: 5px;
   letter-spacing: 1px;
   color: white;
-  text-align: left;
+  text-align: center;
 }
 
 .main-menu a:hover {
@@ -43,27 +55,20 @@ a {
 }
 
 .website-title {
-  color: white;
   text-align: center;
-  font-size: 24px;
   position: absolute;
 
   left: 60px;
-  top: 5px;
-  /* font-family: "Impact", sans-serif; */
+  top: 8px;
 }
 
 .search-box input {
   border: none;
-  content: block;
+  /* content: block; */
   line-height: 28px;
   /* width: 80px; */
-  width: 178px;
-
-  background-color: white;
-  border-radius: 14px;
-  padding: 0px 14px;
-  opacity: 0.8;
+  /* width: 178px; */
+  width: 90%;
 }
 
 .search-icon {
@@ -74,12 +79,19 @@ a {
   opacity: 0.7;
 }
 
+.search-box input:focus .search-icon {
+  display: none;
+}
+
 .landing-box h1 {
   text-align: center;
   color: white;
-  font-size: 55px;
+  font-size: 50px;
   padding: 10px;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-stretch: expanded;
+  transform: scaleY(0.9);
 }
 
 .landing-box a {
@@ -90,10 +102,12 @@ a {
   margin: 0px auto;
   display: block;
   font-size: 20px;
+  transform: scaleY(0.95);
+  color: white;
 }
 
 .landing-box a:hover {
-  background-color: #54bb54;
+  background-color: #54aa54;
 }
 
 .scroll-down a {
@@ -103,17 +117,23 @@ a {
   opacity: 0.8;
   line-height: 25px;
   border-radius: 12px;
-  padding-left: 12px;
-  font-size: 14px;
+  /* padding-left: 12px; */
+  font-size: 12px;
+  font-weight: bold;
 }
 
 /* What We Do */
 
 h2 {
   text-align: center;
+  font-size: 26px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  transform: scaleY(0.9);
 
   opacity: 0.8;
   margin: 0px auto;
+  color: #818181;
   /* background: url("../images/line.png"); */
 }
 
@@ -122,12 +142,18 @@ h2 {
   height: 2px;
   margin: 12px auto;
   opacity: 0.8;
-  background-color: black;
+  background-color: #818181;
 }
 
 p {
   text-align: center;
   margin: 0px auto;
+  color: #b7b3b3;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+
+  /* transform: scaleX(1.1);
+  width: 90%; */
 }
 
 .what-we-do ul {
@@ -168,20 +194,35 @@ p {
   text-align: center;
   margin: 20px auto;
   display: block;
+  font-weight: bold;
+  /* letter-spacing: 1px; */
+  color: #818181;
+
+  transform: scaleY(0.9);
 }
 
 .what-we-do li p {
   margin: auto;
   width: 75%;
+  color: #818181;
+  transform: scaleY(0.9);
 }
 
 .what-we-do a {
   display: block;
   width: 120px;
   line-height: 30px;
-  border-radius: 12px;
+  border-radius: 14px;
   background-color: #54d154;
   margin: 25px auto 0px auto;
+  color: white;
+
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.what-we-do a:hover {
+  background-color: #54aa54;
 }
 
 /*
@@ -191,6 +232,18 @@ p {
 
 .our-latest-work {
   text-align: center;
+}
+
+.our-latest-work h2 {
+  color: #207b20;
+}
+
+.our-latest-work .separator-line {
+  background-color: #207b20;
+}
+
+.our-latest-work p {
+  color: #2b9b2b;
 }
 
 ul.category-tabs {
@@ -213,15 +266,17 @@ ul.category-tabs {
   line-height: 31px;
   text-align: center;
   border: 1px solid #2b9b2b;
+
+  font-weight: bold;
 }
 
 .category-tabs li:first-child a {
-  border-top-left-radius: 14px;
-  border-bottom-left-radius: 14px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 .category-tabs li:last-child a {
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 14px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .category-tabs a.active {
@@ -256,14 +311,17 @@ ul.images-list li {
   color: white;
   background-color: #2b9b2b;
   line-height: 40px;
+  width: 186px;
   padding: 0px 16px;
   display: block;
-  border-radius: 18px;
+  border-radius: 20px;
+
+  font-size: 16px;
 }
 
 .our-latest-work .view-more a:hover {
   color: white;
-  background-color: #2bbb2b;
+  background-color: #2b7b2b;
 }
 
 /* 
@@ -290,8 +348,8 @@ Testimonials
 
 .testimonials .indicators li {
   list-style: none;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   display: inline-block;
   background-color: #aaaaaa;
@@ -332,6 +390,7 @@ Testimonials
   /* display: block; */
   width: 75%;
   text-align: center;
+  color: #444;
 }
 
 .content p.quote:after {
@@ -350,7 +409,8 @@ Testimonials
 .profile .description {
   float: right;
   text-align: left;
-  margin: 0px 5px;
+  margin: 0 0 0 5px;
+  display: block;
 }
 
 .profile .description h3 {
@@ -361,12 +421,17 @@ Testimonials
 }
 
 .profile .description p {
+  /* font-size: 14px; */
+  margin: 0 0px;
   font-size: 14px;
-  margin: 0;
-  font-size: 12px;
   opacity: 0.5;
   color: grey;
+  font-weight: bold;
+  transform: scaleX(1);
+  width: auto;
 }
+
+/* Our happy client */
 
 .our-happy-client .images-list {
   /* padding: 0 8%; */
@@ -383,8 +448,7 @@ Testimonials
 
 .our-happy-client .images-list li {
   /* width: 15%; */
-  /* margin: 4%; */
-  margin: 50px;
+  margin: 40px;
 }
 
 .our-happy-client .see-all-client {
@@ -397,9 +461,12 @@ Testimonials
   background-color: #dddcdc;
   width: 186px;
   line-height: 40px;
-  padding: 0px 16px;
+  /* padding: 0px 16px; */
   display: block;
   border-radius: 18px;
+
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .our-happy-client .see-all-client a:hover {
@@ -407,14 +474,106 @@ Testimonials
   color: white;
 }
 
+/* Meet the team */
+
+.meet-the-team {
+  text-align: center;
+}
+
+.meet-the-team h2 {
+  color: #207b20;
+  color: black;
+  opacity: 0.5;
+}
+
+.meet-the-team .separator-line {
+  background-color: #207b20;
+}
+
+.meet-the-team p {
+  color: #2b9b2b;
+}
+
+.meet-the-team ul.team {
+  margin: 25px auto;
+}
+
+.meet-the-team .team-card {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  margin: 25px 25px;
+}
+
+.meet-the-team .img-wrapper {
+  width: 124px;
+  height: 124px;
+  margin: auto;
+}
+
+.meet-the-team img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.meet-the-team .team .vertical-line {
+  height: 77px;
+  width: 2px;
+  background-color: black;
+  opacity: 0.5;
+  /* display: inline-block; */
+  margin: 10px auto;
+}
+
+.meet-the-team .team-card span {
+  color: white;
+}
+
+.meet-the-team .team-card ul {
+  width: 84px;
+  line-height: 28px;
+  text-align: center;
+  background-color: white;
+  border-radius: 14px;
+
+  display: block;
+  margin: 12px auto;
+}
+
+.meet-the-team .team-card ul li {
+  list-style: none;
+  /* margin-top: 5px; */
+  display: inline-block;
+}
+
+.meet-the-team .team-card ul img {
+  border-radius: 50%;
+}
+
+.meet-the-team .work-with-us {
+  background-color: #3eba3e;
+}
+
+.meet-the-team .work-with-us button {
+  line-height: 40px;
+  width: 175px;
+  border-radius: 16px;
+  margin: 25px auto;
+  /* display: block; */
+  background-color: #54d154;
+  color: #eee;
+  border: none;
+}
+
+.meet-the-team .work-with-us button:hover {
+  background-color: #54ee54;
+}
+
 /* 
   About Us
 */
 
-.about-recent-contact .left-container {
-  width: 100%;
-  background-color: #333333;
-}
 
 .about-recent-contact .separator-line {
   width: 28px;
@@ -431,16 +590,20 @@ Testimonials
 }
 
 .about-us {
-  /* display: inline-block; */
-  width: 80%;
-  margin: 0 10%;
+  display: inline-block;
+  /* width: 80%; */
+  max-width: 450px;
+  padding: 16px 25px 30px 25px;
   color: white;
+}
+
+.about-us p {
   font-size: 14px;
 }
 
 .about-us ul {
   width: 84px;
-  height: 28px;
+  /* height: 28px; */
   line-height: 28px;
   text-align: center;
   display: inline-block;
@@ -451,46 +614,67 @@ Testimonials
 
 .about-us li {
   list-style: none;
-  padding-top: 5px;
+  /* padding-top: 5px; */
   display: inline-block;
 }
 
+.about-us li img {
+  border-radius: 50%;
+}
+
 .recent-posts {
-  /* display: inline-block; */
-  width: 80%;
-  margin: 25px 10%;
+  display: inline-block;
+  max-width: 450px;
+  /* padding: 16px 25px 30px 25px; */
+  padding: 16px 5px 30px 5px;
+}
+
+.recent-posts ul {
+  padding: 15px 5px;
+  margin: 0 auto;
 }
 
 .recent-posts li {
   color: white;
   list-style: none;
-  padding: 6px 0;
-
-  display: block;
+  padding: 5px 0;
+  display: inline-block;
   float: none;
 }
 
 .recent-posts li img {
   width: 53px;
-  height: auto;
+  height: 53px;
+  float: left;
+  border-radius: 5px;
+  margin-right: 8px;
 }
 
 .recent-posts .description {
-  float: none;
-  text-align: center;
+  float: left;
+  text-align: left;
+  width: 228px;
   display: block;
-  margin-left: 7px;
 }
 
 .recent-posts .description p {
-  margin: 4px 0;
-  text-align: center;
+  color: #ccc;
+  padding: 0px 0px 8px 0px;
+  text-align: left;
+  display: block;
+  font-size: 14px;
+  float: left;
 }
 
-.recent-posts .description span {
-  padding: 4px 5px;
-  font-size: 12px;
+.recent-posts .description a {
+  text-decoration: none;
+  padding: 3px 5px;
+  font-size: 13px;
   border-radius: 3px;
+  font-weight: 100;
+  cursor: pointer;
+  text-align: left;
+  float: left;
 }
 
 .magazine {
@@ -510,32 +694,46 @@ Testimonials
 }
 
 .contact-us {
-  /* display: inline-block; */
+  display: inline-block;
   /* width: 33.33%; */
 
   float: none;
   color: white;
-  width: 80%;
-  margin: 30px 10%;
+  /* width: 80%; */
+  padding: 16px 25px 30px 25px;
+  max-width: 450px;
 }
 
-.contact-us p {
-  font-size: 14px;
+/* .contact-us p {
+  font-size: 12px;
   width: 70%;
+} */
+
+.contact-us p {
+  width: 80%;
+  font-size: 14px;
+  font-family: 'ProximaNova', sans-serif;
+  color: #ccc
+  text-align: center;
 }
 
 .contact-us .form {
   margin-top: 25px;
+  margin-bottom: 25px;
   /* width: 322px; */
   width: 100%;
 }
 
-.form input {
+.form input,
+.form textarea {
   background-color: #444444;
   border: none;
   width: 100%;
   margin: 2px;
+  padding: 0px 5%;
   /* padding: 8px 14px; */
+  color: white;
+  line-height: 32px;
 }
 
 .form #name {
@@ -550,19 +748,24 @@ Testimonials
 
 .form #message {
   height: 132px;
+  text-align: left;
+  resize: none;
 }
 
-.form button {
+.form input#submit {
   width: 100%;
-  height: 32px;
+  line-height: 32px;
   background-color: #2b9b2b;
   border: none;
-  margin: 2px;
+  /* margin: 2px; */
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  cursor: pointer;
+  color: white;
 }
 
-.form button:hover {
+
+.form input#submit:hover {
   background-color: #2bcb2b;
 }
 
@@ -618,12 +821,12 @@ Testimonials
     position: absolute;
     float: none;
     left: 60%;
-    font-family: 'Nautilus Pompilius';
     transform: translate(-50%, 0);
   }
 
   .search-box input {
-    width: 177px;
+    /* width: 177px; */
+    width: 90%;
   }
 
   .what-we-do .card {
@@ -632,42 +835,72 @@ Testimonials
     float: left;
   }
 
-  .about-recent-contact .left-container {
-    float: left;
-    width: 66.66%;
+  .our-happy-client .images-list li {
+    /* width: 15%; */
+    margin: 50px;
   }
 
   .about-recent-contact .about-us {
-    width: 40%;
-    margin: 0 5%;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about-recent-contact .about-us p {
+    text-align: center;
+  }
+
+  .about-recent-contact .right-container {
+    float: none;
+    width: 100%;
+  }
+
+  .about-recent-contact .right-container  .recent-posts{
     float: left;
-    margin: 0 8.33%;
+    width: 50%;
   }
 
-  .about-recent-contact .recent-posts {
+  .about-recent-contact .right-container  .contact-us{
+    float: right;
     width: 40%;
-    margin: 0 0;
-    float: right;
+    margin-right: 5%;
   }
 
-  .about-recent-contact .recent-posts li {
-    display: inline-block;
-  }
-
-  .about-recent-contact .recent-posts li .description {
-    float: right;
-    text-align: left;
-  }
-
-  .about-recent-contact .contact-us {
-    float: right;
-    width: 25%;
-    margin: 0 2%;
-  }
+  
 }
 
 @media only screen and (min-width: 992px) {
   .website-title {
     left: 50%;
+  }
+
+  .about-recent-contact {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-recent-contact .about-us {
+    width: 30%;
+    margin: 0 3%;
+    float: left;
+    /* margin: 0 8.33%; */
+  }
+
+  .about-recent-contact .right-container {
+    float: right;
+    width: 60%;
+    margin-right: 3%;
+  }
+
+  .about-recent-contact .recent-posts {
+    width: 40%;
+    float: left;
+  }
+
+
+  .about-recent-contact .contact-us {
+    float: right;
+    width: 40%;
   }
 }
