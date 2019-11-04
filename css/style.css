@@ -67,6 +67,7 @@ textarea:focus {
   border: none;
   /* content: block; */
   line-height: 28px;
+  height: 28px;
   /* width: 80px; */
   /* width: 178px; */
   width: 90%;
@@ -167,14 +168,17 @@ p {
 .what-we-do .card {
   /* width: 30%; */
   width: 40%;
+  text-align: center;
   /* margin: 70px 1.6667% 0px 1.6666%; */
   margin: 70px 2.5% 0px 2.5%;
+  min-width: 250px;
 }
 
 .what-we-do li {
   list-style: none;
   text-align: center;
   display: inline-block;
+  
   /* float: left; */
 }
 
@@ -834,6 +838,8 @@ Testimonials
     width: 30%;
     margin: 70px 1.6667% 0px 1.6666%;
     float: left;
+    text-align: center;
+    min-width: 0;
   }
 
   .our-happy-client .images-list li {
